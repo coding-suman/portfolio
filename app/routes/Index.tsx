@@ -9,7 +9,6 @@ import ExperienceSection from "@/components/ExperienceSection";
 import EducationSection from "@/components/EducationSection";
 import { projects } from "@/data/projects";
 import { MainNav } from "@/components/MainNav";
-import { TooltipProvider } from "@/components/ui/tooltip";
 
 const Index = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -57,12 +56,12 @@ const Index = () => {
       <section id="home" className="min-h-screen pt-16 flex items-center justify-center relative section-padding">
         <div className="absolute inset-0 bg-gradient-to-b from-secondary/50 to-transparent" />
         <div className="container mx-auto text-center relative">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="space-y-6"
-          >
+          > */}
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Suman Mandal
             </h1>
@@ -95,7 +94,7 @@ const Index = () => {
                 </a>
               </Button>
             </div>
-          </motion.div>
+          {/* </motion.div> */}
         </div>
       </section>
 
